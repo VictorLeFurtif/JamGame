@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Barrel  Log.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Scenes/Test2D.unity
+    guid: 13f7e77b53678ec449f8ee3f1949f1dc
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: f3a5634d8f7a785449c9e7caafb4415e
   m_configObjects: {}
