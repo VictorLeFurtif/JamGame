@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 68c07435307a42544ac34359455c0b60
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - tinyPlanetMaterial: {fileID: 2100000, guid: 2719eec2a934fb24b9c31c283aa48e8a,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
