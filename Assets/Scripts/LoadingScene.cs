@@ -7,7 +7,7 @@ public class LoadingScene : MonoBehaviour
 {
     public void LoadGame()
     {
-        SceneManager.LoadScene("Test2D");
+        SceneManager.LoadScene("Test2D32");
     }
 
     public void LoadMenu()
