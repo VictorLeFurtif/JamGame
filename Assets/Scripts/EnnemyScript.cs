@@ -20,7 +20,6 @@ public class EnnemyScript : MonoBehaviour
 
     void Update()
     {
-        
         float xPosition = transform.position.x;
 
         if (seDeplaceVersDroite)
@@ -28,27 +27,30 @@ public class EnnemyScript : MonoBehaviour
             if (xPosition < xMax)
             {
                 rb.velocity = new Vector2(vitesse, rb.velocity.y);
-                transform.rotation = Quaternion.Euler(0f, 0f, 1f);
+                
+                transform.Rotate(0f, 0f, 360f* Time.deltaTime); 
             }
             else
             {
-                seDeplaceVersDroite = false;  
+                seDeplaceVersDroite = false;
             }
         }
         else
         {
-            
             if (xPosition > xMin)
             {
-                rb.velocity = new Vector2(-vitesse, rb.velocity.y);  
-                transform.rotation = Quaternion.Euler(0f, 0f, -1f);
+                rb.velocity = new Vector2(-vitesse, rb.velocity.y);
+                
+                transform.Rotate(0f, 0f, -360f * Time.deltaTime); 
             }
             else
             {
-                seDeplaceVersDroite = true;  
+                seDeplaceVersDroite = true;
             }
         }
     }
+
+
     
     private void OnCollisionStay2D(Collision2D other)
     {
