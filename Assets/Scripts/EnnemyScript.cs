@@ -27,7 +27,8 @@ public class EnnemyScript : MonoBehaviour
         {
             if (xPosition < xMax)
             {
-                rb.velocity = new Vector2(vitesse, rb.velocity.y);  
+                rb.velocity = new Vector2(vitesse, rb.velocity.y);
+                transform.rotation = Quaternion.Euler(0f, 0f, 1f);
             }
             else
             {
@@ -40,6 +41,7 @@ public class EnnemyScript : MonoBehaviour
             if (xPosition > xMin)
             {
                 rb.velocity = new Vector2(-vitesse, rb.velocity.y);  
+                transform.rotation = Quaternion.Euler(0f, 0f, -1f);
             }
             else
             {
@@ -56,6 +58,7 @@ public class EnnemyScript : MonoBehaviour
             Destroy(other.gameObject);
             Instantiate(VFXexplosion, deathPlace, Quaternion.identity);
             canvasGameOver.SetActive(true);
+            
         }
     }
 }
