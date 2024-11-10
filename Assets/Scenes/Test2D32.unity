@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 493bfb50af5d9424da505ba945c86600, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 791554fbf51c33c46a84a7992e4f6173, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1150,6 +1150,8 @@ GameObject:
   - component: {fileID: 1564799683}
   - component: {fileID: 1564799687}
   - component: {fileID: 1564799688}
+  - component: {fileID: 1564799689}
+  - component: {fileID: 1564799690}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -1260,7 +1262,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac615091b683caa4ba6ffcf100266f0f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ea5be305a98f19b42993f9b7f5228a3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1280,7 +1282,7 @@ Transform:
   m_GameObject: {fileID: 1564799682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.8, y: -4.2, z: 0}
+  m_LocalPosition: {x: 32.79, y: -6.96, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1320,6 +1322,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fightZone: {fileID: 655929664}
   fightZoneDuration: 2
+--- !u!111 &1564799689
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564799682}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e06cc75175be492468dc734939206a3f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e06cc75175be492468dc734939206a3f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1564799690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564799682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987676bcd1ab1754baff744f180d018d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle1: {fileID: 21300000, guid: ea5be305a98f19b42993f9b7f5228a3e, type: 3}
+  idle2: {fileID: 21300000, guid: 53515528aa9e7c24481cc6c27a427d61, type: 3}
+  spriteRenderer: {fileID: 1564799685}
 --- !u!1 &1593172559
 GameObject:
   m_ObjectHideFlags: 0
